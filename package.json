@@ -2,7 +2,7 @@
   "name": "pokemon-back",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/",
   "scripts": {
     "start": "node .",
     "start:dev": "node --watch .",
@@ -33,6 +33,9 @@
     "typescript-eslint": "^8.29.1"
   },
   "dependencies": {
+    "@types/express": "^5.0.1",
+    "chalk": "^5.4.1",
+    "express": "^5.1.0",
     "uuid": "^11.1.0"
   }
 }
