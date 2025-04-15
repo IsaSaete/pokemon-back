@@ -1,7 +1,7 @@
 import express from "express";
 import morgan from "morgan";
 import checkHealthStatus from "./middlewares/checkHealthStatus/checkHealthStatus";
-import handleEndpointNotFound from "./middlewares/handleEndpointNotFount/handleEndPointNotFound";
+import handleEndpointNotFound from "./middlewares/handleEndpointNotFount/handleEndpointNotFound";
 
 const app = express();
 

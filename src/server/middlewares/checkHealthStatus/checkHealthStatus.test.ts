@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import checkHealthStatus from "./checkHealthStatus";
 import { MessageResponse } from "../types";
+import checkHealthStatus from "./checkHealthStatus";
 
 describe("Given the checkHealthStatus middleware", () => {
   describe("When it receives a response", () => {
