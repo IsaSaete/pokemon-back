@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import checkHealthStatus from "./checkHealthStatus";
+import { MessageResponse } from "../types";
 
 describe("Given the checkHealthStatus middleware", () => {
   describe("When it receives a response", () => {
@@ -22,7 +23,7 @@ describe("Given the checkHealthStatus middleware", () => {
     });
 
     test("Then it should call the received response's method json with a message 'pong'", () => {
-      const expectedMessage = { message: "pong" };
+      const expectedMessage: MessageResponse = { message: "pong" };
 
       checkHealthStatus(req, res as Response);
 
