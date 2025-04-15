@@ -1,3 +1,5 @@
 import startServer from "./server/startSever";
 
-startServer(4001);
+const port = 4001;
+
+startServer(port);
