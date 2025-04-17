@@ -14,6 +14,8 @@ app.use(morgan("dev"));
 const allowedOrigins = [
   "http://*.netlify.app",
   "https://pokemonisa.netlify.app",
+  "http://localhost:5173",
+  "http://localhost:4173",
 ];
 
 app.use(
