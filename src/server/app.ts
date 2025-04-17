@@ -13,7 +13,7 @@ app.use(morgan("dev"));
 
 const allowedOrigins = [
   "http://*.netlify.app",
-  "https://deploy-preview-13--pokemonisa.netlify.app/pokemons",
+  "https://pokemonisa.netlify.app",
 ];
 
 app.use(
