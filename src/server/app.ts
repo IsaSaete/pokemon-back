@@ -9,10 +9,8 @@ const app = express();
 
 app.use(morgan("dev"));
 
-app.use(morgan("dev"));
-
 const allowedOrigins = [
-  "https://*pokemonisa.netlify.app",
+  "https://*.pokemonisa.netlify.app",
   "https://pokemonisa.netlify.app",
 ];
 
@@ -21,6 +19,8 @@ app.use(
     origin: allowedOrigins,
   }),
 );
+
+app.use(express.json());
 
 app.get("/", checkHealthStatus);
 

@@ -5,3 +5,5 @@ export interface PokemonStructure {
   imageUrl: string;
   isCaptured: boolean;
 }
+
+export type PokemonData = Omit<PokemonStructure, "id" | "isCaptured">;
