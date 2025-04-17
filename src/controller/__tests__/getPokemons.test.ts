@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
-import { testPokemons } from "../pokemon/fixtures";
-import PokemonController from "./PokemonController";
+import { testPokemons } from "../../pokemon/fixtures";
+import PokemonController from "../PokemonController";
 
-describe("Gicen a getPokemons function", () => {
+describe("Given a getPokemons function", () => {
   describe("When it receives a response", () => {
     const pokemonController = new PokemonController(testPokemons);
 
