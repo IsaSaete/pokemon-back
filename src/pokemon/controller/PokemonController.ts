@@ -33,6 +33,28 @@ class PokemonController implements PokemonControllerStructure {
 
     res.status(201).json(newPokemon);
   };
+
+  public deletePokemon = (req: Request, res: Response): void => {
+    const pokemonId = req.params.pokemonId;
+
+    const pokemonFound = this.pokemons.find(
+      (pokemon) => pokemon.id === pokemonId,
+    );
+
+    if (!pokemonFound) {
+      res.status(404).json({ error: "Pokemon not found" });
+
+      return;
+    }
+
+    const pokemonIndex = this.pokemons.findIndex(
+      (pokemon) => pokemon.id === pokemonId,
+    );
+
+    this.pokemons.splice(pokemonIndex, 1);
+
+    res.status(200).json(pokemonFound);
+  };
 }
 
 export default PokemonController;
