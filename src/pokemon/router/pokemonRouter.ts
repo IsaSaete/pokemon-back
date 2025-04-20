@@ -1,6 +1,6 @@
 import { Router } from "express";
 import PokemonController from "../controller/PokemonController";
-import { pokemons } from "../pokemon/data/pokemons";
+import { pokemons } from "../data/pokemons";
 
 const pokemonRouter = Router();
 

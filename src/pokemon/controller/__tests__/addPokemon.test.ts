@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
-import { tentacruel, testPokemons } from "../../pokemon/fixtures";
+import { tentacruel, testPokemons } from "../../fixtures";
 import PokemonController from "../PokemonController";
-import Pokemon from "../../pokemon/Pokemon";
-import { PokemonData } from "../../pokemon/types";
+import Pokemon from "../../Pokemon";
+import { PokemonData } from "../../types";
 
 describe("Given a addPokemon funciton", () => {
   const res = {

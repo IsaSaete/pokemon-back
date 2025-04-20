@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { testPokemons } from "../../pokemon/fixtures";
+import { testPokemons } from "../../fixtures";
 import PokemonController from "../PokemonController";
 
 describe("Given a getPokemons function", () => {

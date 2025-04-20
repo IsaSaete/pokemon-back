@@ -3,16 +3,13 @@ import morgan from "morgan";
 import cors from "cors";
 import checkHealthStatus from "./middlewares/checkHealthStatus/checkHealthStatus";
 import handleEndpointNotFound from "./middlewares/handleEndpointNotFount/handleEndpointNotFound";
-import pokemonRouter from "../router/pokemonRouter";
+import pokemonRouter from "../pokemon/router/pokemonRouter";
 
 const app = express();
 
 app.use(morgan("dev"));
 
-const allowedOrigins = [
-  "https://*.pokemonisa.netlify.app",
-  "https://pokemonisa.netlify.app",
-];
+const allowedOrigins = [/pokemonisa\.netlify\.app/, /^http:\/\/localhost:\d+/];
 
 app.use(
   cors({
