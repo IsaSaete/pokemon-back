@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { PokemonControllerStructure } from "./types";
-import { PokemonData, PokemonStructure } from "../pokemon/types";
-import Pokemon from "../pokemon/Pokemon";
+import { PokemonData, PokemonStructure } from "../types";
+import Pokemon from "../Pokemon";
 
 class PokemonController implements PokemonControllerStructure {
   constructor(private pokemons: PokemonStructure[]) {}
